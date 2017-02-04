@@ -1,0 +1,136 @@
+.about{
+
+	padding-top: 101px;
+	
+}
+.about--container{
+	background: url(../img/about--background.jpg) 15px 0 no-repeat;
+
+}
+.about--grid{
+	float: right;
+	margin-right: 39px;
+	margin-bottom: 100px;
+}
+
+.about--subject{
+
+	font-size: 1.25em;
+	font-family: $open-sans-reg;
+	font-weight: 400;
+	color: #636363;
+	text-transform: uppercase;
+}
+
+.about--title{
+
+	margin-bottom: 31px;
+	font-size: 2.125em;
+	font-family: $open-sans-reg;
+	font-weight: 400;
+	color: $gray-color;
+	text-transform: uppercase;
+	&::after{
+		content: "";
+		display: block;
+		width: 98px;
+		height: 4px;
+		margin-top: 21px;
+		background-color: $orange-color;
+	}
+
+
+}
+.about--text-bold{
+
+	font-family: $open-sans-bold;
+	font-weight: 700;
+
+}
+
+
+.about--text{
+	float: right;
+	max-width: 403px;
+	font-size: 1.125em;
+	font-family: $open-sans-reg;
+	font-weight: 400;
+	line-height: 25px;
+	color: $light-color;
+	margin-bottom: 45px;
+}
+
+.about--list{
+
+	margin-bottom: 49px;
+}
+
+.about--item{
+	
+	margin-bottom: 16px;
+	line-height: 25px;
+	color: #5a5a5a;
+
+	&::before{
+	
+		content: "";
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		margin-right: 1px;
+		background-image: url("../img/about--item.png");
+	}
+	&:last-child{
+	
+		margin-bottom: 0;
+	}
+}
+
+.about--text-semi-bold{
+
+	font-family: $open-sans-semi-bold;
+	font-weight: 600;
+	font-size: 1.125em;
+}
+
+.about--text-italic{
+	font-family: $open-sans-italic;
+	font-size: 1em;
+}
+
+.about--button{
+
+	position: relative;
+	width: 194px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.about--button-icon{
+
+	position: absolute;
+	top: calc(50% - 6px);
+	left: 23px;
+	width: 14px;
+	height: 12px;
+	background-image: url("../img/about--icon.png");
+	overflow: hidden;
+}
+.about--img{
+
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.about--button-text{
+
+	margin-left: 47px;
+	text-align: left;
+	font-family: $open-sans-semi-bold;
+	color: #616161;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	line-height: 47px;
+
+}
