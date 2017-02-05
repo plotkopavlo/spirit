@@ -46,7 +46,7 @@
 
         content: '';
 
-        background-color: rgba($orange-color, .7);
+        background-color: rgba($orange-color, 0.7);
     }
 }
 
@@ -89,14 +89,17 @@
     color: #636363;
 }
 
-.contact--input
-{
+.contact--input,
+.contact--massage{
     width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    &:focus{
+        border-color: $orange-color ;
+        outline: none;
+    }
 }
 
-.contact--massage
-{
-    width: 100%;
+.contact--massage{
     height: 165px;
 }
 
@@ -108,6 +111,11 @@
     margin-top: 10px;
 
     background-color: $orange-color;
+    &:focus,
+    &:hover{
+        background-color: rgba($orange-color, 0.7);
+
+    }
 }
 
 .contact--text-button
